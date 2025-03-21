@@ -33,7 +33,7 @@ const LoginCenter = () => {
         console.log(FindUser);
         
        if (FindUser) {
-            navigate("/Home")
+            navigate("/")
             localStorage.setItem("userId", FindUser.id)
             localStorage.setItem("userName", FindUser.userName)
             localStorage.setItem("userLast", FindUser.userLast)

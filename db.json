@@ -6,6 +6,18 @@
       "userLast": "Coronado",
       "userEmail": "12345",
       "userPass": "12345"
+    },
+    {
+      "id": "4389",
+      "userName": "1",
+      "userLast": "1",
+      "userEmail": "1",
+      "userPass": "1",
+      "area": "Marca de Ropa",
+      "brandName": "SaintThunder",
+      "personalDescription": "Una chica",
+      "addressUser": "Mordor",
+      "profilePfp": null
     }
   ]
 }

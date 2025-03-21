@@ -1,4 +1,5 @@
 import MainNav from "../components/MainNav";
+import HomeProfile from "../components/HomeProfile";
 
 export default function Home() {
 
@@ -8,8 +9,8 @@ export default function Home() {
     <nav>
     <MainNav/>
     </nav>
-    
-    
+    <HomeProfile/>
+
     </>
   );
 }

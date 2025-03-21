@@ -1,14 +1,14 @@
+import HomePublic from "../components/HomePublic";
 import MainNav from "../components/MainNav";
-import ProfileSetting from "../components/ProfileSetting";
 
-const Profile = () => {
+const Public = () => {
     return(
         <>
         <nav>
         <MainNav/>   
         </nav>
-        <ProfileSetting/>
+        <HomePublic/>
         </>
     )
 }
-export default Profile
+export default Public

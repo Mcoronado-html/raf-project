@@ -1,4 +1,4 @@
-import RegisterCenter from "../components/RegisterCenter"
+import RegisterCenter from "../components/RegisterCenter";
 
 const Register = () => {
     return(
