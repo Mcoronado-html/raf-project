@@ -5,12 +5,17 @@
       "userName": "Mario",
       "userLast": "Coronado",
       "userEmail": "12345",
-      "userPass": "12345"
+      "userPass": "12345",
+      "area": "Fotografia",
+      "brandName": "Hola",
+      "personalDescription": "hola",
+      "addressUser": "chepe",
+      "profilePfp": null
     },
     {
       "id": "4389",
-      "userName": "1",
-      "userLast": "1",
+      "userName": "Sofia",
+      "userLast": "Amador",
       "userEmail": "1",
       "userPass": "1",
       "area": "Marca de Ropa",

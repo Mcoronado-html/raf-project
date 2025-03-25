@@ -1,6 +1,6 @@
-async function getUsers(endpoint) {
+async function getUsers(endpoint,id="") {
     try {
-        const response = await fetch(`http://localhost:3001/${endpoint}/`, {
+        const response = await fetch(`http://localhost:3001/${endpoint}/${id}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
