@@ -24,5 +24,50 @@
       "addressUser": "Mordor",
       "profilePfp": null
     }
+  ],
+  "products": [
+    {
+      "id": "a8b6",
+      "name": "1",
+      "price": "1",
+      "description": "11",
+      "size": "1",
+      "userName": null,
+      "userLast": null,
+      "prodImg": null
+    },
+    {
+      "id": "3693",
+      "name": "Ushanka",
+      "price": "$80",
+      "description": "Una Chica",
+      "size": "Single size",
+      "userName": "Sofia",
+      "userLast": "Amador",
+      "prodImg": null,
+      "userId": "4389"
+    },
+    {
+      "id": "726f",
+      "name": "Jacket",
+      "price": "$100",
+      "description": "Hola",
+      "size": "XL, S, M ",
+      "userName": "Sofia",
+      "userLast": "Amador",
+      "prodImg": null,
+      "userId": "4389"
+    },
+    {
+      "id": "091f",
+      "name": "3",
+      "price": "3",
+      "description": "3",
+      "size": "3",
+      "userName": "Sofia",
+      "userLast": "Amador",
+      "prodImg": null,
+      "userId": "4389"
+    }
   ]
 }

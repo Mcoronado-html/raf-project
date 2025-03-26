@@ -1,5 +1,5 @@
 import { useState } from "react"
-import UserCallers from "../services/RAFCallers"
+import UsersCallers from "../services/RAFCallers"
 
 const ProfileSetting = () => {
 
@@ -51,7 +51,7 @@ const ProfileSetting = () => {
             "profilePfp": img
 
         }
-        UserCallers.updateUsers(profileSettings, "usersInfo", localStorage.getItem("userId"))
+        UsersCallers.updateUsers(profileSettings, "usersInfo", localStorage.getItem("userId"))
     }
 
     return(

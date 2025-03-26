@@ -1,5 +1,5 @@
 import React, { useState} from "react"
-import UserCallers from "../services/RAFCallers"
+import UsersCallers from "../services/RAFCallers"
 import { Link } from "react-router-dom"
 
 import "../styles/RegisterCenter.css"
@@ -35,7 +35,7 @@ const RegisterCenter = () => {
             "userEmail": emailUser,
             "userPass": passUser
         }
-        UserCallers.postUsers(users, "usersInfo")
+        UsersCallers.postUsers(users, "usersInfo")
     }
 
     return(

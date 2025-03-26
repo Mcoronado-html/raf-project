@@ -7,6 +7,8 @@ import { Link } from "react-router-dom"
 const HomeProfile = () => {
 
         const [LoginAccess, SetLoginInfo]=useState([])
+        const [usersProducts, SetUsersProducts]=useState([])
+
 
         useEffect(() =>{
             async function fetchDataUsers() {
@@ -14,9 +16,19 @@ const HomeProfile = () => {
                 SetLoginInfo(userLogin)            
             };
             fetchDataUsers();
-            console.log(LoginAccess);
+        
+        async function fetchProductUsers() {
+            const productsUsers = await UsersCallers.getUsers("products")
+            const productFilter = productsUsers.filter (p=> p.userId === localStorage.getItem ("userId"))
+            SetUsersProducts(productFilter)  
+            
+        };
+        fetchProductUsers();
+        
+
             
         },[]);
+
 
     return(
     <>  
@@ -28,13 +40,32 @@ const HomeProfile = () => {
 
        <div>
        <Link to= "/Items"><button>Publicar Articulos</button></Link>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
+
+        {usersProducts.map((product)=> {
+            return(
+                <div className="card" style={{ width: "18rem" }}>
+                <img className="card-img-top" src="..." alt="Card image cap" />
+                <div className="card-body">
+                  <h5 className="card-title">{product.name}</h5>
+                  <p className="card-text">
+                    {product.description}
+                  </p>
+                  <p className="card-text">
+                    {product.price}
+                  </p>
+                  <p className="card-text">
+                    {product.size}
+                  </p>
+                  <a href="#" className="btn btn-primary">
+                    Comprar
+                  </a>
+                </div>
+              </div>
+            )
+        })}
        </div>
+
+
        
     </>
     )
