@@ -20,8 +20,27 @@
       "userPass": "1",
       "area": "Marca de Ropa",
       "brandName": "SaintThunder",
-      "personalDescription": "Una chica",
+      "personalDescription": "una chica",
       "addressUser": "Mordor",
+      "profilePfp": null
+    },
+    {
+      "id": "9e2b",
+      "userName": "Barry",
+      "userLast": "Vega",
+      "userEmail": "1",
+      "userPass": "1"
+    },
+    {
+      "id": "b106",
+      "userName": "barry",
+      "userLast": "vega ",
+      "userEmail": "2",
+      "userPass": "2",
+      "area": "Stylish",
+      "brandName": "Flacko",
+      "personalDescription": "las guilas guapas",
+      "addressUser": "Aserri",
       "profilePfp": null
     }
   ],
@@ -68,6 +87,28 @@
       "userLast": "Amador",
       "prodImg": null,
       "userId": "4389"
+    },
+    {
+      "id": "1b0a",
+      "name": "1",
+      "price": "1",
+      "description": "1",
+      "size": "1",
+      "userName": "barry",
+      "userLast": "vega ",
+      "prodImg": null,
+      "userId": "b106"
+    },
+    {
+      "id": "0ddf",
+      "name": "2",
+      "price": "2",
+      "description": "22",
+      "size": "2",
+      "userName": "barry",
+      "userLast": "vega ",
+      "prodImg": null,
+      "userId": "b106"
     }
   ]
 }
