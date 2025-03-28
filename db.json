@@ -1,18 +1,6 @@
 {
   "usersInfo": [
     {
-      "id": "f6f9",
-      "userName": "Mario",
-      "userLast": "Coronado",
-      "userEmail": "12345",
-      "userPass": "12345",
-      "area": "Fotografia",
-      "brandName": "Hola",
-      "personalDescription": "hola",
-      "addressUser": "chepe",
-      "profilePfp": null
-    },
-    {
       "id": "4389",
       "userName": "Sofia",
       "userLast": "Amador",
@@ -25,41 +13,24 @@
       "profilePfp": null
     },
     {
-      "id": "9e2b",
-      "userName": "Barry",
-      "userLast": "Vega",
-      "userEmail": "1",
-      "userPass": "1"
-    },
-    {
-      "id": "b106",
-      "userName": "barry",
-      "userLast": "vega ",
-      "userEmail": "2",
-      "userPass": "2",
-      "area": "Stylish",
-      "brandName": "Flacko",
-      "personalDescription": "las guilas guapas",
-      "addressUser": "Aserri",
+      "id": "4e33",
+      "userName": "Mario",
+      "userLast": "Coronado",
+      "userEmail": "3",
+      "userPass": "3",
+      "area": "Marca de Ropa",
+      "brandName": "Heavenly",
+      "personalDescription": "un chico aprendiendo a ser el",
+      "addressUser": "Purral",
       "profilePfp": null
     }
   ],
   "products": [
     {
-      "id": "a8b6",
-      "name": "1",
-      "price": "1",
-      "description": "11",
-      "size": "1",
-      "userName": null,
-      "userLast": null,
-      "prodImg": null
-    },
-    {
-      "id": "3693",
+      "id": "6098",
       "name": "Ushanka",
       "price": "$80",
-      "description": "Una Chica",
+      "description": "Hat",
       "size": "Single size",
       "userName": "Sofia",
       "userLast": "Amador",
@@ -67,48 +38,59 @@
       "userId": "4389"
     },
     {
-      "id": "726f",
+      "id": "ef80",
+      "name": "Ushanka",
+      "price": "$80",
+      "description": "Hat",
+      "size": "Single size",
+      "userName": "Sofia",
+      "userLast": "Amador",
+      "prodImg": null,
+      "userId": "4389"
+    },
+    {
+      "id": "7842",
+      "name": "Ushanka",
+      "price": "$80",
+      "description": "Hat",
+      "size": "Single size",
+      "userName": "Sofia",
+      "userLast": "Amador",
+      "prodImg": null,
+      "userId": "4389"
+    },
+    {
+      "id": "2a5d",
+      "name": "Ushanka",
+      "price": "$80",
+      "description": "Hat",
+      "size": "Single size",
+      "userName": "Sofia",
+      "userLast": "Amador",
+      "prodImg": null,
+      "userId": "4389"
+    },
+    {
+      "id": "fba4",
       "name": "Jacket",
-      "price": "$100",
-      "description": "Hola",
-      "size": "XL, S, M ",
-      "userName": "Sofia",
-      "userLast": "Amador",
+      "price": "$80",
+      "description": "Una jacket bacana",
+      "size": "M",
+      "userName": "Mario",
+      "userLast": "Coronado",
       "prodImg": null,
-      "userId": "4389"
+      "userId": "4e33"
     },
     {
-      "id": "091f",
-      "name": "3",
-      "price": "3",
-      "description": "3",
-      "size": "3",
-      "userName": "Sofia",
-      "userLast": "Amador",
+      "id": "cc1d",
+      "name": "Jacket",
+      "price": "$80",
+      "description": "Una jacket bacana",
+      "size": "M",
+      "userName": "Mario",
+      "userLast": "Coronado",
       "prodImg": null,
-      "userId": "4389"
-    },
-    {
-      "id": "1b0a",
-      "name": "1",
-      "price": "1",
-      "description": "1",
-      "size": "1",
-      "userName": "barry",
-      "userLast": "vega ",
-      "prodImg": null,
-      "userId": "b106"
-    },
-    {
-      "id": "0ddf",
-      "name": "2",
-      "price": "2",
-      "description": "22",
-      "size": "2",
-      "userName": "barry",
-      "userLast": "vega ",
-      "prodImg": null,
-      "userId": "b106"
-    }
+      "userId": "4e33"
+    } 
   ]
 }

@@ -18,16 +18,6 @@ const LoginCenter = () => {
         fetchDataUsers();
     },[]);
 
-    function email(event) {
-
-        SetEmailUser(event.target.value)
-
-    }
-    function password(event) {
-
-        SetPassUser(event.target.value)
-
-    }
     function loginInfo() {
        const FindUser = LoginAccess.find(users => users.userEmail == emailUser && users.userPass == passUser)
         console.log(FindUser);
@@ -40,14 +30,13 @@ const LoginCenter = () => {
        }
         
     }
-
     return(
     <>
     <div className="login-Container">
         <div className="login-Info">
         <h3>Glad to see you again!</h3>
-        <input value={emailUser} onChange={email} type="text" placeholder="Email"/>
-        <input value={passUser} onChange={password} type="text" placeholder="Password"/>
+        <input  onChange={(e) =>  SetEmailUser(e.target.value)} type="text" placeholder="Email"/>
+        <input  onChange={(e) => SetPassUser(e.target.value)} type="text" placeholder="Password"/>
         <button onClick={loginInfo}>Login</button>
         <p>Forgot password?</p>
         </div>

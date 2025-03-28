@@ -21,22 +21,6 @@ const ItemsPosting = () => {
     const [prodDescription, SetProdDescription]=useState()
     const [prodSize, SetProdSize]=useState()
 
-    function name(event){
-      SetProdName(event.target.value)
-    }
-    function price(event){
-
-      SetProdPrice(event.target.value)
-    }
-    function description(event){
-
-      SetProdDescription(event.target.value)
-    }
-    function size(event){
-
-      SetProdSize(event.target.value)
-    }
-
     function productsInfo(){
       
       let infoProducts = {
@@ -58,13 +42,13 @@ const ItemsPosting = () => {
     <h2>Añadi un nuevo articulo</h2>
     <div>
     <p>Nombre</p>
-    <input type="text" value={prodName} onChange={name}/>
+    <input type="text" onChange={(e) => SetProdName(e.target.value)} />
     <p>Precio</p>
-    <input type="text" value={prodPrice} onChange={price}/>
+    <input type="text" onChange={(e) => SetProdPrice(e.target.value)} />
     <p>Descripcion</p>
-    <input type="text" value={prodDescription} onChange={description}/>
+    <input type="text" onChange={(e) => SetProdDescription(e.target.value)} />
     <p>Tallas</p>
-    <input type="text" value={prodSize} onChange={size}/>
+    <input type="text" onChange={(e) => SetProdSize(e.target.value)} />
     <p>Fotos</p>
     <input type="file" onChange={uploadImg} />
     <button onClick={productsInfo}>Publicar</button>

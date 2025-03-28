@@ -8,6 +8,7 @@ import Home from "../pages/Home"
 import Profile from "../pages/Profile"
 import Public from "../pages/Public"
 import Items from "../pages/Items"
+import PublicProfile from "../pages/PublicProfile"
 
 function Routing() {
   return (
@@ -19,7 +20,9 @@ function Routing() {
 <Route path="/Register" element={<Register/>}/>   
 <Route path="/Profile" element={<Profile/>}/>
 <Route path="/Home" element={<Home/>}/>
-<Route path="/Items" element={<Items/>}/>    
+<Route path="/Items" element={<Items/>}/>   
+<Route path="/PublicProfile" element={<PublicProfile/>}/>   
+
         </Routes>
       </Router>
     </div>

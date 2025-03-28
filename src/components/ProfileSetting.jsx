@@ -23,22 +23,6 @@ const ProfileSetting = () => {
       const [personalDescription, SetPersonalDescription]=useState()
       const [addressUser, SetAddressUser]=useState()
   
-      function area(event){
-        SetAreaArt(event.target.value)
-      }
-      function brand(event){
-  
-        SetBrandName(event.target.value)
-      }
-      function description(event){
-  
-        SetPersonalDescription(event.target.value)
-      }
-      function address(event){
-  
-        SetAddressUser(event.target.value)
-      }
-
       function settingsProfile(){
         
         let profileSettings = {
@@ -66,11 +50,11 @@ const ProfileSetting = () => {
             <option value={"Otro"}>Otro</option>
         </select>
         <h4>Como se llama tu marca</h4>
-        <input type="text" value={brandName} onChange={brand}/>
+        <input type="text" onChange={(e) => SetBrandName(e.target.value)} />
         <h4>Contanos mas sobre vos y que te inspira</h4>
-        <input type="text" value={personalDescription} onChange={description}/>
+        <input type="text"  onChange={(e) => SetPersonalDescription(e.target.value)} />
         <h4>De donde sos?</h4>
-        <input type="text" placeholder="ejm. San Jose, Costa Rica" value={addressUser} onChange={address} />
+        <input type="text" placeholder="ejm. San Jose, Costa Rica"  onChange={(e) => SetAddressUser(e.target.value)}  />
         <h4>Foto de perfil</h4>
         <input type="file" onChange={uploadImg} />
         <button onClick={settingsProfile}>Enviar</button>

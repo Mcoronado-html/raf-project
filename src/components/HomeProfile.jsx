@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react"
 import UsersCallers from "../services/RAFCallers"
 import { Link } from "react-router-dom"
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
 const HomeProfile = () => {
 
@@ -44,8 +46,6 @@ const HomeProfile = () => {
 
   ]);
 
-
-
   async function editProd(id) {
 
     let editInfo = {
@@ -60,6 +60,11 @@ const HomeProfile = () => {
     setReload(!reload)
   }
 
+  async function deleteProd(id) {
+
+    await UsersCallers.deleteUser("products", id)
+    setReload(!reload)
+  }
 
 
   return (
@@ -75,32 +80,27 @@ const HomeProfile = () => {
 
         {usersProducts.map((product) => {
           return (
-            <div className="card" style={{ width: "18rem" }} key={product.id}>
-              <img className="card-img-top" src="..." alt="Card image cap" />
-              <div className="card-body">
-                <h5 className="card-title">{product.name}</h5>
-                <p className="card-text">
+            <Card style={{ width: '18rem' }}>
+              <Card.Img variant="top" src="holder.js/100px180" />
+              <Card.Body>
+                <Card.Title>{product.name}</Card.Title>
+                <Card.Text>
                   {product.description}
-                </p>
-                <p className="card-text">
+                </Card.Text>
+                <Card.Text>
                   {product.price}
-                </p>
-                <p className="card-text">
+                </Card.Text>
+                <Card.Text>
                   {product.size}
-                </p>
-                <a href="#" className="btn btn-primary" onClick={() => {
+                </Card.Text>
+                <Button variant="primary" onClick={() => {
 
                   localStorage.setItem("prodId", product.id)
 
-                }}>
-                  Editar
-                </a>
-                <a href="#" className="btn btn-primary">
-                  Eliminar
-                </a>
-              </div>
-
-            </div>
+                }}>Editar</Button>
+                <Button variant="primary"onClick={()=> deleteProd(product.id)}>Eliminar articulo</Button>
+              </Card.Body>
+            </Card>
           )
         })}
         <div>
@@ -114,8 +114,6 @@ const HomeProfile = () => {
           )}>Confirmar cambios</button>
         </div>
       </div>
-
-
 
     </>
   )
