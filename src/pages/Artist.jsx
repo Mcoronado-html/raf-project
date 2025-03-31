@@ -1,18 +1,19 @@
+import ArtistPage from "../components/ArtistPage";
 import MainNav from "../components/MainNav";
-import ProfileSetting from "../components/ProfileSetting";
 import FooterHighFashion from "../components/FooterPage";
 
-const Profile = () => {
+
+const Artist = () => {
     return(
         <>
         <nav>
         <MainNav/>   
         </nav>
-        <ProfileSetting/>
+        <ArtistPage/>
         <footer>
         <FooterHighFashion/>   
         </footer>
         </>
     )
 }
-export default Profile
+export default Artist

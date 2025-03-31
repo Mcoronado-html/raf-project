@@ -1,0 +1,156 @@
+
+body {
+  background-color: #76f3b4;
+  font-family: 'Poppins', sans-serif;
+  color: #5C4033; 
+  margin: 0;
+  padding: 0;
+}
+
+.cont-cards{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.profile-container2 {
+  background-color: #FFF8E7; 
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 900px;
+  margin: 20px auto;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.profile-h4 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #8B5E3B; 
+  margin-bottom: 10px;
+}
+
+
+.profile-p {
+  font-size: 16px;
+  color: #7D5A44; 
+  margin-bottom: 15px;
+}
+
+
+.profile-btn {
+  background-color: #D2A679;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profile-btn:hover {
+  background-color: #B8865B;
+}
+
+
+.card {
+  background-color: #FFF5E1; 
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+  padding: 10px;
+  width: 18rem;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #6B4226; 
+}
+
+.card-text {
+  font-size: 14px;
+  color: #7D5A44; 
+}
+
+.card-img-top {
+  border-radius: 12px 12px 0 0;
+  height: 180px;
+  object-fit: cover;
+}
+
+
+.btn-primary {
+  background-color: #D2A679; 
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #B8865B;
+}
+
+
+.profile-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #D2A679;
+  border-radius: 8px;
+  background-color: #FFF5E1;
+  font-size: 16px;
+  color: #7D5A44;
+}
+
+.profile-input:focus {
+  border-color: #8B5E3B; 
+  outline: none;
+}
+
+
+h4.profile-h4 {
+  font-size: 24px;
+  color: #8B5E3B;
+  margin-bottom: 15px;
+}
+
+
+@media (max-width: 768px) {
+  .profile-container2 {
+    padding: 20px;
+  }
+
+  .profile-h4 {
+    font-size: 24px;
+  }
+
+  .profile-p {
+    font-size: 14px;
+  }
+
+  .profile-btn {
+    padding: 10px;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-h4 {
+    font-size: 20px;
+  }
+
+  .profile-p {
+    font-size: 12px;
+  }
+}

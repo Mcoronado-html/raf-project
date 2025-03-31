@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react"
 import UsersCallers from "../services/RAFCallers"
+import "../styles/ItemsPosting.css"
 
 const ItemsPosting = () => {
 
@@ -39,19 +40,19 @@ const ItemsPosting = () => {
    
     return(
     <>
-    <h2>Añadi un nuevo articulo</h2>
-    <div>
-    <p>Nombre</p>
-    <input type="text" onChange={(e) => SetProdName(e.target.value)} />
-    <p>Precio</p>
-    <input type="text" onChange={(e) => SetProdPrice(e.target.value)} />
-    <p>Descripcion</p>
-    <input type="text" onChange={(e) => SetProdDescription(e.target.value)} />
-    <p>Tallas</p>
-    <input type="text" onChange={(e) => SetProdSize(e.target.value)} />
-    <p>Fotos</p>
-    <input type="file" onChange={uploadImg} />
-    <button onClick={productsInfo}>Publicar</button>
+    <div className="items-container">
+    <h2 className="items-h2">Añadi un nuevo articulo</h2>
+    <p className="items-p">Nombre</p>
+    <input type="text" onChange={(e) => SetProdName(e.target.value)} className="items-input"/>
+    <p className="items-p">Precio</p>
+    <input type="text" onChange={(e) => SetProdPrice(e.target.value)} className="items-input"/>
+    <p className="items-p">Descripcion</p>
+    <input type="text" onChange={(e) => SetProdDescription(e.target.value)} className="items-input"/>
+    <p className="items-p">Tallas</p>
+    <input type="text" onChange={(e) => SetProdSize(e.target.value)} className="items-input"/>
+    <p className="items-p">Fotos</p>
+    <input type="file" onChange={uploadImg} className="items-input"/>
+    <button onClick={productsInfo} className="items-btn">Publicar</button>
         
     </div>
     </>

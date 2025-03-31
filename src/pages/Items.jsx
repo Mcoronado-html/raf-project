@@ -1,5 +1,6 @@
 import ItemsPosting from "../components/ItemsPosting";
 import MainNav from "../components/MainNav";
+import FooterHighFashion from "../components/FooterPage";
 
 const Items = () => {
     return(
@@ -8,6 +9,9 @@ const Items = () => {
         <MainNav/>   
         </nav>
         <ItemsPosting/>
+        <footer>
+        <FooterHighFashion/>   
+        </footer>
         </>
     )
 }

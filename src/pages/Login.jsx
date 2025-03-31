@@ -1,13 +1,13 @@
 import LoginCenter from "../components/LoginCenter";
-import MainNav from "../components/MainNav";
+import FooterHighFashion from "../components/FooterPage";
 
 const Login = () => {
     return(
         <>
-        <nav>
-        <MainNav/>   
-        </nav>
         <LoginCenter/>
+        <footer>
+        <FooterHighFashion/>   
+        </footer>
         </>
     )
 }

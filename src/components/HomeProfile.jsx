@@ -3,6 +3,7 @@ import UsersCallers from "../services/RAFCallers"
 import { Link } from "react-router-dom"
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import "../styles/HomeProfile.css"
 
 const HomeProfile = () => {
 
@@ -69,29 +70,29 @@ const HomeProfile = () => {
 
   return (
     <>
-      <div>
-        <h4>{LoginAccess.brandName}</h4>
-        <p>{LoginAccess.personalDescription}</p>
-        <p>{LoginAccess.addressUser}</p>
+      <div className="profile-container2">
+        <h4 className="profile-h4">{LoginAccess.brandName}</h4>
+        <p className="profile-p">{LoginAccess.personalDescription}</p>
+        <p className="profile-p">{LoginAccess.addressUser}</p>
+        <Link to="/Items"><button className="profile-btn">Publicar Articulos</button></Link>
       </div>
 
       <div>
-        <Link to="/Items"><button>Publicar Articulos</button></Link>
-
+      <div className="cont-cards">
         {usersProducts.map((product) => {
           return (
             <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src="holder.js/100px180" />
+              <Card.Img variant="top" src={product.prodImg} />
               <Card.Body>
                 <Card.Title>{product.name}</Card.Title>
                 <Card.Text>
-                  {product.description}
+                  Descripcion: {product.description}
                 </Card.Text>
                 <Card.Text>
-                  {product.price}
+                  Precio: {product.price}
                 </Card.Text>
                 <Card.Text>
-                  {product.size}
+                  Tallas: {product.size}
                 </Card.Text>
                 <Button variant="primary" onClick={() => {
 
@@ -103,13 +104,15 @@ const HomeProfile = () => {
             </Card>
           )
         })}
+        </div>
         <div>
-          <input type="file" onChange={uploadImg} />
-          <input type="text" onChange={(e) => SetEditName(e.target.value)} />
-          <input type="text" onChange={(e) => SetEditDescription(e.target.value)} />
-          <input type="text" onChange={(e) => SetEditPrice(e.target.value)} />
-          <input type="text" onChange={(e) => SetEditSize(e.target.value)} />
-          <button onClick={() => editProd(
+          <h4 className="profile-h4">Edita tus productos</h4>
+          <input type="file" onChange={uploadImg} className="profile-input"/>
+          <input type="text" onChange={(e) => SetEditName(e.target.value)} className="profile-input"/>
+          <input type="text" onChange={(e) => SetEditDescription(e.target.value)} className="profile-input"/>
+          <input type="text" onChange={(e) => SetEditPrice(e.target.value)} className="profile-input"/>
+          <input type="text" onChange={(e) => SetEditSize(e.target.value)} className="profile-input"/>
+          <button className="profile-btn" onClick={() => editProd(
             localStorage.getItem("prodId")
           )}>Confirmar cambios</button>
         </div>

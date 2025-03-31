@@ -5,92 +5,137 @@
       "userName": "Sofia",
       "userLast": "Amador",
       "userEmail": "1",
-      "userPass": "1",
+      "userPass": "123456",
       "area": "Marca de Ropa",
       "brandName": "SaintThunder",
-      "personalDescription": "una chica",
-      "addressUser": "Mordor",
+      "personalDescription": "Marca de ropa costarricense con enfoque en la alta costura. Ingresada del INA en desarrollo textil. ",
+      "addressUser": "San Jerónimo, San José",
       "profilePfp": null
     },
     {
-      "id": "4e33",
+      "id": "a056",
+      "userName": "1",
+      "userLast": "1",
+      "userEmail": "4",
+      "userPass": "123456",
+      "area": "Marca de Ropa",
+      "brandName": "Supreme",
+      "personalDescription": "Marca neoyorkina de alta costura",
+      "addressUser": "NYC, USA",
+      "profilePfp": null
+    },
+    {
+      "id": "06c2",
       "userName": "Mario",
       "userLast": "Coronado",
-      "userEmail": "3",
-      "userPass": "3",
+      "userEmail": "2",
+      "userPass": "123456",
       "area": "Marca de Ropa",
       "brandName": "Heavenly",
-      "personalDescription": "un chico aprendiendo a ser el",
-      "addressUser": "Purral",
+      "personalDescription": "Tratando de vivir del arte y aprender a ser él mismo",
+      "addressUser": "Purral, Guadalupe",
       "profilePfp": null
     }
   ],
   "products": [
     {
-      "id": "6098",
-      "name": "Ushanka",
-      "price": "$80",
-      "description": "Hat",
-      "size": "Single size",
-      "userName": "Sofia",
-      "userLast": "Amador",
-      "prodImg": null,
-      "userId": "4389"
-    },
-    {
-      "id": "ef80",
-      "name": "Ushanka",
-      "price": "$80",
-      "description": "Hat",
-      "size": "Single size",
-      "userName": "Sofia",
-      "userLast": "Amador",
-      "prodImg": null,
-      "userId": "4389"
-    },
-    {
-      "id": "7842",
-      "name": "Ushanka",
-      "price": "$80",
-      "description": "Hat",
-      "size": "Single size",
-      "userName": "Sofia",
-      "userLast": "Amador",
-      "prodImg": null,
-      "userId": "4389"
-    },
-    {
-      "id": "2a5d",
-      "name": "Ushanka",
-      "price": "$80",
-      "description": "Hat",
-      "size": "Single size",
-      "userName": "Sofia",
-      "userLast": "Amador",
-      "prodImg": null,
-      "userId": "4389"
-    },
-    {
-      "id": "fba4",
+      "id": "950d",
       "name": "Jacket",
-      "price": "$80",
-      "description": "Una jacket bacana",
-      "size": "M",
+      "price": "$90",
+      "description": "Una jacket banaca",
+      "size": "L, M, S",
       "userName": "Mario",
       "userLast": "Coronado",
       "prodImg": null,
-      "userId": "4e33"
+      "userId": "06c2"
     },
     {
-      "id": "cc1d",
+      "id": "8203",
       "name": "Jacket",
       "price": "$80",
       "description": "Una jacket bacana",
-      "size": "M",
+      "size": "L, M, S",
       "userName": "Mario",
       "userLast": "Coronado",
       "prodImg": null,
-      "userId": "4e33"
-    } 
+      "userId": "06c2"
+    },
+    {
+      "id": "f04f",
+      "name": "Jacket",
+      "price": "$80",
+      "description": "Una jacket bacana",
+      "size": "L, M, S",
+      "userName": "Mario",
+      "userLast": "Coronado",
+      "prodImg": null,
+      "userId": "06c2"
+    },
+    {
+      "id": "6701",
+      "name": "Ushanka",
+      "price": "$90",
+      "description": "Un hat bacano",
+      "size": "L, M, S",
+      "userName": "Sofia",
+      "userLast": "Amador",
+      "prodImg": null,
+      "userId": "4389"
+    },
+    {
+      "id": "3efa",
+      "name": "Ushanka",
+      "price": "$90",
+      "description": "Un hat bacano",
+      "size": "L, M, S",
+      "userName": "Sofia",
+      "userLast": "Amador",
+      "prodImg": null,
+      "userId": "4389"
+    },
+    {
+      "id": "b23d",
+      "name": "Ushanka",
+      "price": "$90",
+      "description": "Un hat bacano",
+      "size": "L, M, S",
+      "userName": "Sofia",
+      "userLast": "Amador",
+      "prodImg": null,
+      "userId": "4389"
+    },
+    {
+      "id": "225f",
+      "name": "T-shirt",
+      "price": "$15",
+      "description": "SHirt",
+      "size": "L, M, S",
+      "userName": "1",
+      "userLast": "1",
+      "prodImg": null,
+      "userId": "a056"
+    },
+    {
+      "id": "f706",
+      "name": "T-shirt",
+      "price": "$15",
+      "description": "SHirt",
+      "size": "L, M, S",
+      "userName": "1",
+      "userLast": "1",
+      "prodImg": null,
+      "userId": "a056"
+    },
+    {
+      "id": "134e",
+      "name": "T-shirt",
+      "price": "$15",
+      "description": "SHirt",
+      "size": "L, M, S",
+      "userName": "1",
+      "userLast": "1",
+      "prodImg": null,
+      "userId": "a056"
+    }
   ]
 }

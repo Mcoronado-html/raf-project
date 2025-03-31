@@ -1,0 +1,82 @@
+
+.profilesetting-container {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profilesetting-h4 {
+  font-size: 20px;
+  color: #5c4033; 
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.profilesetting-select,
+.profilesetting-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.profilesetting-select {
+  background-color: #fff;
+  color: #5c4033;
+}
+
+.profilesetting-input {
+  background-color: #fff;
+  color: #5c4033;
+}
+
+.profilesetting-input::placeholder {
+  color: #aaa;
+}
+
+
+.profilesetting-btn {
+  background-color: #76f3b4; 
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.profilesetting-btn:hover {
+  background-color: #8b5e3b; 
+}
+
+
+.profilesetting-option {
+  background-color: #f7f7f7;
+  color: #5c4033;
+}
+
+
+.profilesetting-input[type="file"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.profilesetting-input[type="file"]:hover {
+  border-color: #76f3b4;
+}
+
+
+h4, .profilesetting-input, .profilesetting-select {
+  margin-top: 15px;
+}

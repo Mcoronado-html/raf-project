@@ -1,0 +1,80 @@
+
+.navbar {
+  background-color: #76f3b4; 
+  padding: 10px 20px;
+}
+
+.navbar-brand {
+  font-size: 28px;
+  font-weight: bold;
+  color: #8B5E3B;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: #8B5E3B; 
+}
+
+.navbar-toggler-icon {
+  background-color: #FFF8E7; 
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: bold;
+  color: #5C4033;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 8px;
+}
+
+.nav-link:hover {
+  background-color: #8B5E3B; 
+  color: #FFF8E7; 
+}
+
+
+.bi-person-vcard-fill {
+  color: #5C4033;
+  transition: color 0.3s ease;
+}
+
+.bi-person-vcard-fill:hover {
+  color: #8B5E3B; 
+}
+
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+}
+
+
+.nav-link.active {
+  color: #D2A679; 
+  font-weight: bold;
+}
+
+.nav-link.active:hover {
+  background-color: #D2A679;
+  color: white;
+}

@@ -9,6 +9,8 @@ import Profile from "../pages/Profile"
 import Public from "../pages/Public"
 import Items from "../pages/Items"
 import PublicProfile from "../pages/PublicProfile"
+import Artist from "../pages/Artist"
+
 
 function Routing() {
   return (
@@ -16,13 +18,13 @@ function Routing() {
       <Router>
         <Routes>
 <Route path="/Login" element={<Login/>}/> 
-<Route path="/" element={<Public/>}/> 
-<Route path="/Register" element={<Register/>}/>   
+<Route path="/Public" element={<Public/>}/> 
+<Route path="/" element={<Register/>}/>   
 <Route path="/Profile" element={<Profile/>}/>
 <Route path="/Home" element={<Home/>}/>
 <Route path="/Items" element={<Items/>}/>   
 <Route path="/PublicProfile" element={<PublicProfile/>}/>   
-
+<Route path="/Artist" element={<Artist/>}/>
         </Routes>
       </Router>
     </div>

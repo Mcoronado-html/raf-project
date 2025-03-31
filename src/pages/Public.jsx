@@ -1,5 +1,6 @@
 import HomePublic from "../components/HomePublic";
 import MainNav from "../components/MainNav";
+import FooterHighFashion from "../components/FooterPage";
 
 
 const Public = () => {
@@ -9,6 +10,9 @@ const Public = () => {
         <MainNav/>   
         </nav>
         <HomePublic/>
+        <footer>
+        <FooterHighFashion/>   
+        </footer>
         </>
     )
 }
