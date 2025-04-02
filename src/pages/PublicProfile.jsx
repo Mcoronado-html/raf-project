@@ -36,7 +36,7 @@ function PublicProfile() {
         <p className="profile-p">{userInfo.addressUser}</p>
     </div>
 
-    <div>
+    <div className="contCardsHome">
       {userGet.map(produc => (
         <div key={produc.id}>
           <Card style={{ width: "18rem" }}>

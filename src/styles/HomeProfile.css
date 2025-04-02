@@ -10,6 +10,7 @@ body {
 .cont-cards{
   display: flex;
   flex-wrap: wrap;
+    
 }
 
 
